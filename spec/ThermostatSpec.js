@@ -82,6 +82,7 @@ describe ('Thermostat', function() {
       });
 
       it('is considered high usage when temperature is over 25 degrees', function() {
+        thermostat.switchPowerSavingOff()
         for (var i = 0; i < 6; i++) {
           thermostat.up();
         }
