@@ -71,14 +71,14 @@ describe ('Thermostat', function() {
         for (var i = 0; i < 3; i++) {
           thermostat.down();
         }
-        expect(thermostat.energyUsage()).toEqual('low usage')
+        expect(thermostat.energyUsage()).toEqual('low-usage')
       });
 
       it('is considered medium usage when temperature is below 25 degrees', function() {
         for (var i = 0; i < 3; i++) {
           thermostat.up();
         }
-        expect(thermostat.energyUsage()).toEqual('medium usage')
+        expect(thermostat.energyUsage()).toEqual('medium-usage')
       });
 
       it('is considered high usage when temperature is over 25 degrees', function() {
@@ -86,7 +86,7 @@ describe ('Thermostat', function() {
         for (var i = 0; i < 6; i++) {
           thermostat.up();
         }
-        expect(thermostat.energyUsage()).toEqual('high usage')
+        expect(thermostat.energyUsage()).toEqual('high-usage')
       });
     });
 });

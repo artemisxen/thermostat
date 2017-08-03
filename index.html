@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="public/mystyle.css">
     <title>Thermostat</title>
   </head>
   <body>
@@ -10,11 +11,13 @@
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
         <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
+        power saving mode is <span id="power-saving-status"></span>
         <button id="powersaving-on">PSM on</button>
         <button id="powersaving-off">PSM off</button>
       </p>
     </section>
-    <script src="src/thermostat.js"></script>
+    <script src="js/thermostat.js"></script>
+    <script src="jquery.js"></script>
+    <script src="js/interface.js"></script>
   </body>
 </html>
