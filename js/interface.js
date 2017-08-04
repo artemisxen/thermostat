@@ -7,6 +7,13 @@ $(document).ready(function() {
     event.preventDefault();
     var city = $('#city').val();
     weather(city);
+    $.post('http://localhost:4567/temperature', function(data) {
+    $('#tempearture').text(thermostat.temperature);
+    });
+  });
+
+  $.getJSON('http://localhost:4567/temperature', function(data) {
+    $('#test').text(data);
   });
 
   $('#power-saving-status').text('on')
