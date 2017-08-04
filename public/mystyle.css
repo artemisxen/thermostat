@@ -1,11 +1,50 @@
 .low-usage {
-  color: green;
+  color: black;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  display:inline-block;
+  border-style: double;
+  border-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 22%;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(28, 187, 28, 0.63);
 }
 
 .medium-usage {
   color: black;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  display:inline-block;
+  border-style: double;
+  border-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 22%;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(212, 212, 23, 0.34);
 }
 
 .high-usage {
-  color: red;
+  color: black;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  display:inline-block;
+  border-style: double;
+  border-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 22%;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(239, 10, 10, 0.74);
 }

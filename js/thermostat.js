@@ -59,7 +59,7 @@ function Thermostat() {
     if (this.temperature < this.MEDIUM_ENERGY_USAGE_LIMIT) {
       return 'low-usage'
     }
-    else if (this.temperature >= this.MEDIUM_ENERGY_USAGE_LIMIT && this.temperature <= this.MAX_PSM_ON ) {
+    else if (this.temperature >= this.MEDIUM_ENERGY_USAGE_LIMIT && this.temperature < this.MAX_PSM_ON ) {
       console.log(this.temperature);
       return 'medium-usage'
     }

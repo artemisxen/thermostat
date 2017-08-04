@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 
   function updateTemperature() {
-    $('#temperature').text(thermostat.temperature);
+    $('#temperature').text(thermostat.temperature + ' °C');
     $('#temperature').attr('class', thermostat.energyUsage());
   };
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
     var token = '&appid=cbed1d0b4fe91bd98b15119e571f2102';
     var units = '&units=metric';
     $.get(url + city + token + units, function(data) {
-      $('#current-temperature').text(data.main.temp);
+      $('#current-temperature').text(city + ' ' + Math.ceil(data.main.temp));
     });
   };
 });
